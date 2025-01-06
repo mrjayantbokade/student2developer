@@ -11,10 +11,10 @@ const Hero = () => {
                 {/*</h1>*/}
 
                 {/*dummy*/}
-                <h1 className="text-4xl md:text-6xl font-medium text-white font-sora   ">
+                <h1 className="text-4xl md:text-7xl font-medium text-white font-sora   ">
                     We help you{' '}
                     to craft yourself into{' '}
-                    <span className="  ">a Developer</span>.
+                    <span className="  ">a Developer.</span>
                 </h1>
                 {/* Subheading */}
 
@@ -25,11 +25,12 @@ const Hero = () => {
                         Get Started
                     </button>
 
-                    <button
-                        className="bg-gradient-to-br from-white hover:to-roseMain to-roseMain hover:bg-roseMain hover:text-backgroundBlack opacity-100 text-backgroundBlack font-bold py-2 px-6 sm:px-10 rounded-lg transition  ">
-                        Join Community
-                    </button>
-
+                    <div className={`bg-white rounded-lg`}>
+                        <button
+                            className="bg-gradient-to-br from-white via-white to-roseMain/70  hover:text-backgroundBlack opacity-100 text-backgroundBlack font-bold py-2 px-6 sm:px-10 rounded-lg transition  ">
+                            Join Community
+                        </button>
+                    </div>
 
 
                 </div>

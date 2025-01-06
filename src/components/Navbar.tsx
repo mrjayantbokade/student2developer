@@ -9,7 +9,7 @@ const Navbar = () => {
                 <li className="hover:text-roseMain  cursor-pointer">Events</li>
                 <li className="hover:text-roseMain text-roseMain cursor-pointer shake-effect">Courses</li>
             </ul>
-            <button className="bg-rose-500 text-[16px] text-white h-10 font-inter font-semibold py-2 px-4 rounded-lg ">
+            <button className="bg-roseMain text-[16px] text-white h-10 font-inter font-semibold py-2 px-4 rounded-lg ">
                 Log In
             </button>
         </nav>
