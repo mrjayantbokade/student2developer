@@ -11,7 +11,7 @@ const Hero = () => {
                 {/*</h1>*/}
 
                 {/*dummy*/}
-                <h1 className="text-4xl md:text-7xl font-medium text-white font-sora   ">
+                <h1 className="text-4xl md:text-6xl font-medium text-white font-sora   ">
                     We help you{' '}
                     to craft yourself into{' '}
                     <span className="  ">a Developer.</span>
