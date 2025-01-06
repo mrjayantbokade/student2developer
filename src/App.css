@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(-5px); }
+    20% { transform: translateX(5px); }
+    30% { transform: translateX(-5px); }
+    40% { transform: translateX(5px); }
+    50% { transform: translateX(0); }
+    100% { transform: translateX(0); } /* Rest of the time is for the pause */
+}
+
+.shake-effect {
+    animation: shake 3s infinite ease-in-out;
+}
+
+@layer base {
+  :root { --radius: 0.5rem;
+    }
+}
+
+
+.container {
+    position: relative; /* Ensure it acts as a containing block */
+    overflow: hidden;   /* Hide any overflowing content */
+    width: 100%;        /* Ensure container fits the screen */
+}
+
+.blur-div {
+    position: absolute; /* Position it as needed */
+    width: 100%;        /* Set to full width of the container */
+    max-width: 100%;    /* Ensure it doesn't exceed container width */
+    height: auto;       /* Adjust height if needed */
+    box-sizing: border-box;
+    filter: blur(10px); /* Example of a blur effect */
+}
