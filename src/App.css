@@ -7,6 +7,20 @@
 
 
 
+.scrollbar-hide {
+    /* For modern browsers */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+
+    /* For WebKit-based browsers (Chrome, Safari, etc.) */
+    overflow: auto; /* Ensure scrolling works */
+}
+
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Edge */
+}
+
 @keyframes shake {
     0% { transform: translateX(0); }
     10% { transform: translateX(-5px); }
@@ -22,7 +36,14 @@
 }
 
 @layer base {
-  :root { --radius: 0.5rem;
+  :root { --radius: 0.5rem; --color-1: 0 100% 63%; --color-2: 270 100% 63%; --color-3: 210 100% 63%; --color-4: 195 100% 63%; --color-5: 90 100% 63%;
+    }
+  .dark {
+        --color-1: 0 100% 63%;
+        --color-2: 270 100% 63%;
+        --color-3: 210 100% 63%;
+        --color-4: 195 100% 63%;
+        --color-5: 90 100% 63%;
     }
 }
 

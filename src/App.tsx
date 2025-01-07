@@ -1,26 +1,31 @@
+
 import './App.css'
 
 
 import Navbar from "./components/Navbar.tsx";
 import Hero from "./components/Hero.tsx";
+import Courses from "./components/Courses.tsx";
 
 function App() {
 
   return (
       <>
-          <div className={`absolute w-full h-full bg-black`}>
+          <div className={`absolute w-full  bg-black`}>
 
               <div className={` absolute w-full  z-50   text-white overflow-hidden`}>
                   <Navbar/>
-                  <Hero/>
-
-                  <div className={`text-xl  font-bold text-white`}>
-                      dfdlkfkl
+                 <div className={`mb-10`}>
+                     <Hero/>
+                 </div>
+                  <div className={` md:px-5  mt-40 h-screen`}>
+                      <Courses />
                   </div>
+
+
 
               </div>
 
-
+              {/*background overlays blur effect*/}
               <div id={`blurParticles`}
                    className=" relative w-full h-[2000px]   overflow-hidden z-30    bg-transparent">
 
