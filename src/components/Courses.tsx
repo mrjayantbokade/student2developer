@@ -57,7 +57,7 @@ const courseData = [
     },
     {
         courseImage: employeeManagement,
-        courseTittle: "Employee Management System",
+        courseTittle: "Employee Management",
         tags: ["HR", "Backend", "Management"],
         mainFeatures: ["Employee Records", "Attendance Tracking", "Payroll System", "Data Security"],
         price: 2999
