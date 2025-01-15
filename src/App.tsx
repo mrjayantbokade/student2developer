@@ -21,7 +21,7 @@ function App() {
                         <Hero/>
                     </div>
                     <div className={` md:px-5  mt-40 h-screen`}>
-                        <Courses/>
+                        <Courses />
                     </div>
 
 

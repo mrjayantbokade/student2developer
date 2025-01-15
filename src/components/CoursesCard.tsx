@@ -10,17 +10,18 @@ interface CoursesCardProps {
     courseTittle: string;
     tags?: string[]; // Optional tags
     mainFeatures?: string[];
+    directingLink?: string;
     price?: number; // Optional list of main features
 }
 
-const CoursesCard = ({ courseImage, courseTittle, tags = [], mainFeatures = [], price}: CoursesCardProps) => {
+const CoursesCard = ({ courseImage, courseTittle, tags = [], mainFeatures = [], directingLink, price}: CoursesCardProps) => {
     return (
         <MagicCard
             className="h-[550px] w-[340px] shadow-sm shadow-gray-50/20 flex-col overflow-hidden flex-shrink-0 rounded-xl bg-backgroundBlackOG relative"
         >
             <div className="text-grayText flex flex-col  w-full h-full">
                 {/* Course Image */}
-                <img className="w-full h-40 object-cover" src={courseImage} alt="course image" />
+                <img className="w-full h-40 object-fill" src={courseImage} alt="course image" />
 
                 <div className="px-6 py-4">
                     {/* Dynamic Tags */}
@@ -52,7 +53,9 @@ const CoursesCard = ({ courseImage, courseTittle, tags = [], mainFeatures = [], 
 
             {/* View Course Button */}
                 <div className="w-full flex justify-center absolute -bottom-6  ">
-                    <PinkButton buttonText="View Course"/>
+                    <a href={directingLink}>
+                        <PinkButton buttonText="View Course"/>
+                    </a>
                 </div>
         </MagicCard>
     );
